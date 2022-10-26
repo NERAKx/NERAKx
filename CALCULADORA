@@ -1,0 +1,13 @@
+print('Calculadora')
+print('Digite uma opção: 1 - adição 2 - subtração  3 - multiplicação  4 - divisão')
+num1 = float(input('digite um número: '))
+num2 = float(input('digite um número: '))
+op = int(input('digite o numero operador: '))
+if op == 1:
+    print(num1 + num2)
+elif op == 2:
+    print(num1 - num2)
+elif op == 3:
+    print(num1 * num2)
+else:
+    print(num1 / num2)
