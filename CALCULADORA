@@ -1,13 +1,27 @@
-print('Calculadora')
-print('Digite uma opção: 1 - adição 2 - subtração  3 - multiplicação  4 - divisão')
-num1 = float(input('digite um número: '))
-num2 = float(input('digite um número: '))
-op = int(input('digite o numero operador: '))
-if op == 1:
-    print(num1 + num2)
-elif op == 2:
-    print(num1 - num2)
-elif op == 3:
-    print(num1 * num2)
-else:
-    print(num1 / num2)
+print('====== BEM-VINDO(A) ! VAMOS CALCULAR? ======')
+print('\nAntes de calcular, passarei algumas intruções, DIGITE:\n\n 1) SOMA\n 2) SUBTRAÇÃO\n 3) MULTIPLICAÇÃO\n 4) DIVISÃO\n 5) PORCENTAGEM\n')
+
+operando1= float(input('Informe um número: '))
+operando2= float(input('Informe outro número: '))
+a= operando1 + operando2
+b= operando1 - operando2
+c= operando1 * operando2
+d= operando1 / operando2
+e= (operando1 * operando2) / 100
+operacao = int(input('Informe a operação: '))
+
+
+if operacao == 1:
+    print('A soma de {:.2f} + {:.2f} = {}.' . format (operando1,operando2,a))
+
+if operacao == 2:
+    print('A subtração de {} - {} = {}.' . format (operando1,operando2,b))
+
+if operacao == 3:
+    print('A multiplicação de {} * {} = {}.' . format (operando1,operando2,c))
+
+if operacao == 4:
+    print('A divisão de {} / {} = {}.' . format (operando1,operando2,d))
+
+if operacao == 5:
+    print('A porcentagem de {} % {} = {}.' . format (operando1,operando2,e))
