@@ -1,0 +1,30 @@
+print ('====== *JOKENPÔ* ======\n')
+jog1= (input('1° jogador, informe seu nome: '))
+jog2= (input('2° jogador, informe seu nome: '))
+
+print ('\nSEJAM BEM-VINDOS(AS), {} e {} !!!' . format (jog1,jog2))
+
+#1= pedra
+#2= papel
+#3= tesoura
+
+aposta1= int(input('{}, escolha uma opção: 1, 2 ou 3\n'. format (jog1)))
+aposta2= int(input('{}, escolha uma opção: 1, 2 ou 3\n'. format (jog2)))
+
+if aposta1 ==1 and aposta2 ==2:
+         print('Parabéns {}! Você ganhou!'. format (jog2))
+
+if aposta1 ==2 and aposta2 ==1:
+        print('Parabéns {}! Você ganho!'. format (jog1))
+
+if aposta1 ==3 and aposta2 ==2:
+        print('Parabéns {}! Você ganhou!'. format (jog1))
+
+if aposta1 ==2 and aposta2 == 3:
+        print('Parabéns {}!Você ganhou!'. format (jog2))
+
+if aposta1 ==1 and aposta2 ==3:
+        print ('Parabéns {}! Você ganhou!'. format (jog1))
+
+if aposta1 == 3 and aposta2 ==1:
+        print('Parabéns {}! Você ganhou!'. format (jog2))
